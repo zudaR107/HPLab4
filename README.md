@@ -1,2 +1,2 @@
 # HPLab4
-![Alt text](./githubScreenshots/desktop.png?raw=true "desktop")
+![Alt text](./HP/Models/Post/zuda.png?raw=true "desktop")
