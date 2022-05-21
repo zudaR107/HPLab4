@@ -8,62 +8,78 @@
 #include "Models\Post\Worker.h"
 #include "Models\Post\Client.h"
 
-#pragma region Функции
+#pragma region Г”ГіГ­ГЄГ¶ГЁГЁ
 int sqrt25() {
-	std::cout << "Квадратный корень из 25 равен " << pow(25, 0.5) << ".";
+	std::cout << "ГЉГўГ Г¤Г°Г ГІГ­Г»Г© ГЄГ®Г°ГҐГ­Гј ГЁГ§ 25 Г°Г ГўГҐГ­ " << pow(25, 0.5) << ".";
 	return 0;
 }
 
 int hello() {
 	char name[25]{};
-	cout << "Введите ваше имя: ";
+	cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГўГ ГёГҐ ГЁГ¬Гї: ";
 	cin.ignore(1, '\n');
 	cin.getline(name, 25);
 	system("cls");
-	cout << "Привет, " << name << "!";
+	cout << "ГЏГ°ГЁГўГҐГІ, " << name << "!";
 	return 0;
 }
 
 int printgraf() {
-	cout << "_________________¶¶¶1___¶¶¶____¶¶¶1_______________\n";
-	cout << "__________________¶¶¶____¶¶¶____1¶¶1______________\n";
-	cout << "___________________¶¶¶____¶¶¶____¶¶¶______________\n";
-	cout << "___________________¶¶¶____¶¶¶____¶¶¶______________\n";
-	cout << "__________________¶¶¶____1¶¶1___1¶¶1______________\n";
-	cout << "________________1¶¶¶____¶¶¶____¶¶¶1_______________\n";
-	cout << "______________1¶¶¶____¶¶¶1___¶¶¶1_________________\n";
-	cout << "_____________¶¶¶1___1¶¶1___1¶¶1___________________\n";
-	cout << "____________1¶¶1___1¶¶1___1¶¶1____________________\n";
-	cout << "____________1¶¶1___1¶¶1___1¶¶¶____________________\n";
-	cout << "_____________¶¶¶____¶¶¶1___¶¶¶1___________________\n";
-	cout << "______________¶¶¶¶___1¶¶¶___1¶¶¶__________________\n";
-	cout << "_______________1¶¶¶1___¶¶¶1___¶¶¶¶________________\n";
-	cout << "_________________1¶¶1____¶¶¶____¶¶¶_______________\n";
-	cout << "___________________¶¶1____¶¶1____¶¶1______________\n";
-	cout << "___________________¶¶¶____¶¶¶____¶¶¶______________\n";
-	cout << "__________________1¶¶1___1¶¶1____¶¶1______________\n";
-	cout << "_________________¶¶¶____¶¶¶1___1¶¶1_______________\n";
-	cout << "________________11_____111_____11_________________\n";
-	cout << "__________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________\n";
-	cout << "1¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________\n";
-	cout << "1¶¶¶¶¶¶¶¶¶¶¶__1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________\n";
-	cout << "1¶¶_______¶¶__1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________\n";
-	cout << "1¶¶_______¶¶__1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________\n";
-	cout << "1¶¶_______¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________\n";
-	cout << "1¶¶_______¶¶__1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________\n";
-	cout << "_¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________\n";
-	cout << "_¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________\n";
-	cout << "__________¶¶___1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1________\n";
-	cout << "__________1¶¶___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_________\n";
-	cout << "____________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶11__________\n";
-	cout << "11_____________________________________________111\n";
-	cout << "1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1\n";
-	cout << "__¶¶111111111¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶111111111¶__" << endl;
+	cout << "                  ^7YPB##&&&&&&&&&##BGGGGGPPYYYPPPPPPGGGGGBBBB#BB###BGPY7^:.                    "   << endl;
+	cout << "               ^75B##&&&&&#&&&&##BGBBBBBGP555555YJYY5Y5PPGBBB###########GY!^^:.                 "   << endl;
+	cout << "            :!5B#&&&&&####&&#BGGGBBBBBBBGGBGGGGP55YYYY5PGBB#BBBBB######&&&BJ~:::.               "   << endl;
+	cout << "          ^JG#&&&&&####&&&#BBBBBBB####BBBGGGGGGP5YYY5PPPGGGGBBBB#######&&&&&#57^::              "   << endl;
+	cout << "        ~YB&&&&&&###&&&&#BB#######BBBGGGBBBBBGGP5YJJ55555PPGGGBB####B##&&&&&&&#P7^.             "   << endl;
+	cout << "     .!5B##&&&&&#&&&&&#####&###BBBBBBB######BBBGGGGGP555555PGBBBB###B####&&&&##&#57^            "   << endl;
+	cout << "    ^JPB&&&&&&&&&&&&&#&&&&####B####&&&&&&#####BBBBGPP55555PBBBGBBBBBBBB###&&&&&&&&#G?.          "   << endl;
+	cout << "    :?B&&#&&&&&&&@&#&&&&####&&&&###########BBBBBBBBBGGGGPGGPPPGGGGPPPPGBB####&&&&&&&#P~         "   << endl;
+	cout << "    7B&&&&&&&&&&@&&&&&&&&&&&&########BBBBGGGGBBBBBGGGGPP55PPP5PP5YYYYYJYPGB##&&&&&&&##BJ.       "   << endl;
+	cout << "   ~#&##&&@&&&&@&&&&&&&&&&##BBBBBBGGGGGGBB#####BBBGGBGGPP555555YJJJ?J777J5GB##&##&&&&##BY:      "   << endl;
+	cout << "   J&&&&&@&&&&&&&&&&&&&######B#BB#######&&###BB#BBBBGGGGPPPP5YJ????77!7!!7YPG##&&&&&&&#BGJ.     "   << endl;
+	cout << "  ^B&&@&&&&#&&&&&########&&##############BB#BBBBGGBBBBBBGGPYJ?7?77777!!!!~!JGB##&&&&&&#BGP?     "   << endl;
+	cout << "  J&@@@@@&&&&&&&&###&&&&&&&&############BBBGGGBB###BBBBGP5YJJ???777!!~~~~~~!JG##&&&&&&&BPPP^    "   << endl;
+	cout << " !#@@@@@@@&&@@@&##&&##&&&&##########BBBGGGBB######BGGGPP55YJJ??7!~~~~~~~~~~~!5B#&&&&&&#G555?    "   << endl;
+	cout << "^B@@@@@@@@@@@@&&&&&&############BBBBB#######BBBBBGPPP55YJJJ?!!~~~~~~~~~~~~~~~?G###&&&&BP555J:   "   << endl;
+	cout << "G@@@@@@@@@@@@&&&&&&######################BGGGGPPP55YJ?77!!~~~~~~~~~~~~~~~~~~~7PB###&&#GPPGJ7^   "   << endl;
+	cout << "@@@@@@&@@@@@@@@@&&&#################BBBGGGPP55YYJJ?77!!~~~~~~~~~~~~~~~~~~~~~~7PB###&##BG5BJ!^   "   << endl;
+	cout << "@@@@@&@@@@@@@@@@&&########BBBBBBBBBBGGPPGGPPYJJ?77!!!~~~~~~~~~~~~~~~~~~~~~~~!?GB###&#BBPGP?~^   "   << endl;
+	cout << "&@@@&&@@@&@@@@@@&&&&#########BBBBBBBBB##B##BGPYJ77!!!!!~~~~~~~~~~~~~~~~~~~~!!JGGBBB###BPGJ7~:   "   << endl;
+	cout << "&&@&&&&@&@@@@@&&&&##&&&#B#####################BGP5J?7!!!!~~~~~~~~~~~~~~~~~~!!JGGBB####PPP?7~.   "   << endl;
+	cout << "@&&&&&&@@@@@@@&###&&&#PB########################BBPYJ?7!!!!!~~~~~~~~~~~~~~~~!?PGBB###BPPY?!:    "   << endl;
+	cout << "&&&&&&@@@@@@@&&&###BBGYBBGGGBB#####BBGGBB###B###BBBPYJ?7!!!!!!!!!!~~~~~~~~~~~!5GBB#BBGP5Y?~     "   << endl;
+	cout << "&&&&&&&&&&&&&&&###GPP5J5YJYY5GBBBBB##&##BBBBBBB##BBG5YJ?77!!!7!!77777!!!~~~~~~7PBBBBGP55J?:     "   << endl;
+	cout << "#&&&&&&&&&&&&&###BGGGY555YYJYY5PPP55Y5PP5B###GGBBBPGPYJ?77!!!77??JY555555YJ?777YB#BBPPP5J!      "   << endl;
+	cout << "#&#&&&&&&&&&&####BBBBYPP5YYJJJJJYYYYYJJ??JYPGBBBBBBBBPJ7!!!!!7JJYPPGGGGGGGGPP5YYB#BGPPPY7.      "   << endl;
+	cout << "##&&&&&&&&&&&####BGPG?5P55YJJJJ?????????JJJ?JYPB#B#BGP5Y??7~7J5PGBBBGGGPP55YYYYYBBGPPP5?.       "   << endl;
+	cout << "&##&&&&@&&&&#####BGPGYY555YJJJ????77777????J5BBB##BPY?7!!7J?5YYPGGP5YJJ?YP55Y?7JGGGGG5J.        "   << endl;
+	cout << "&&&&&&&&&&&#########BBGP5YYJJJ??7777777777JPB#B#BGP5J?!!~~!757YPBB##BPY??5P5555PGPGBG5:         "   << endl;
+	cout << "&@@@&&&&&&###########BBBGGPP5YJ??77!!!!!!!J5PBBGP555Y7!!~!7JPYJJY5PPPJYP5YYJYPP5PGGG5^          "   << endl;
+	cout << "&@@@@&&&&##########BGP55YJJJJJYYYYJJ????77?5BGP5PPP5J7!!!!75#BY??JJJ?JJJ??7YBBGPPG55~           "   << endl;
+	cout << "&&&@@@&&&#########BBGP5YJ?77!!!!!!77?JYY55PPPGGGGP5Y?7!!!!7YP?!!!!7777777!7PGGP5GGY~            "   << endl;
+	cout << "&&&&@@&&###########BBGPYJ??777!!!!!!777?YPPPGBBBBG5J?7!!!!!J5!!!!!!!!!!!!7?PPPPPG5~             "   << endl;
+	cout << "&&&&@@@&############BGP5YJ??777777777J5GBGGPPPGGGP5J7!!!!!!?P7!~~!!!!!!!!!?PGPGPJ^              "   << endl;
+	cout << "&&&&&@@&############BGP5YJJ??777!!!7YGB#BBBBBBBBGPY?7!!~~!!7JY?77!!!!~~~!7PGGG5!.               "   << endl;
+	cout << "&&&&&&@&############BGPYYJ??7777777YGBB##########BGY?7!!!!!777777?????????YJ7~.                 "   << endl;
+	cout << "&&&&&&&&###########BGGPYJJ??77?????YGBB####&######BPY?7??7!!77!!~~~~~!!7!!~                     "   << endl;
+	cout << "&&&&&@@&&&#########BGGPYJ??7?Y555YJ?JJ5GB#######BGP5YJJJ7!~!!777!~~~~~~~~~.                     "   << endl;
+	cout << "GGBBB##&###&#######BBG5JJ?7!?B#BBGP5YJ??JJYYYYY5Y?7!!!!~~~~~!!77!!!~~~~~^.                      "   << endl;
+	cout << "GGGGPPPPGGGGBB#####BBG5JJ?!!?G#&####BGP55YJ7!!!77!!!~~~!~~~~~~!7!!!!~!~:                        "   << endl;
+	cout << "GPPPPPPPPP55PPPGBB##BGYJJ?7!7?Y5GGBBBBBBGP55Y?7!!!!!!~!!~!!!!!~!7!!!!^                          "   << endl;
+	cout << "PPPP5P555555555555PGGG5JJJ?77?YY555555YY55PPP5YYJJJ???77!!777!!!777~.                           "   << endl;
+	cout << "PPP555555555555555YYY55YYJJ??JY5PP555YY?77?????JJJ?JJJYJJ?7?7!!!7!:                             "   << endl;
+	cout << "GGP55555555555555Y5YYYYYYYYJ?JJY555YYYYYJJ?????7777?777!!!!7!!!!^                               "   << endl;
+	cout << "PGG55555P5PP5YYYYYY5YYYYYYYY??JJJYYYJJ?JJJJ??????777!!~~~!!!7!~.                                "   << endl;
+	cout << "PGGPPP55P55P55555555YYYYYYY5J7???????77???????777!!!!!!!!!77~.                                  "   << endl;
+	cout << "PBGGPP55PP5555555YYY5YYYYYY55?7777!!!!!!!!!7777!!!!!!!!!!7~:                                    "   << endl;
+	cout << "PPGGPP55PP555P55555555YYYY555Y7!!!!!!!!!!~~~~~!~!!!!!!!!~.                                      "   << endl;
+	cout << "GP5PPPP555555555555555555YYYY5J7777!!!!~~~~~~~~~~~~!!!~.                                        "   << endl;
+	cout << "GG55PPPPP55555555555555555YYY55??77!!!!!!~~~~~~~~~!!^.                                          "   << endl;
+	cout << "GG55PPPPPP55555PPPP555555555YY55Y??77!!!!!!!!!~!!!^.    										"		 << endl;
 	return 0;
 }
 int exitProgram() {
 	system("cls");
-	std::cout << "Запущена функция выхода из программы.\n\n";
+	std::cout << "Г‡Г ГЇГіГ№ГҐГ­Г  ГґГіГ­ГЄГ¶ГЁГї ГўГ»ГµГ®Г¤Г  ГЁГ§ ГЇГ°Г®ГЈГ°Г Г¬Г¬Г».\n\n";
 	system("pause");
 	exit(0);
 }
@@ -78,13 +94,13 @@ namespace ZDV {
 
 int Users() {
 	system("cls");
-	cout << "Вывод объекта класса Parcel" << endl;
+	cout << "Г‚Г»ГўГ®Г¤ Г®ГЎГєГҐГЄГІГ  ГЄГ«Г Г±Г±Г  Parcel" << endl;
 	Parcel parcel(5000, "14.03.2022", "Kaluga");
 	parcel.print();
-	cout << "\nВывод объекта класса Worker" << endl;
+	cout << "\nГ‚Г»ГўГ®Г¤ Г®ГЎГєГҐГЄГІГ  ГЄГ«Г Г±Г±Г  Worker" << endl;
 	Worker worker("Daniil", "Zudin", 19, "log", "pas", "Postman");
 	worker.print();
-	cout << "\nВывод объекта класса Client" << endl;
+	cout << "\nГ‚Г»ГўГ®Г¤ Г®ГЎГєГҐГЄГІГ  ГЄГ«Г Г±Г±Г  Client" << endl;
 	Client client("Nikita", "Kuzin", 18, "log", "pas", parcel.getCodeNumber());
 	client.print();
 	cout << "\n\n";
@@ -96,10 +112,10 @@ int AddWorker(MyVector& vector) {
 	system("cls");
 	using namespace ZDV;
 	int count{};
-	cout << "\nВведите кол-во объектов класса Рабочий: ";
+	cout << "\nГ‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г«-ГўГ® Г®ГЎГєГҐГЄГІГ®Гў ГЄГ«Г Г±Г±Г  ГђГ ГЎГ®Г·ГЁГ©: ";
 	cin >> count;
 	for (int i = 0; i < count; i++) {
-		cout << "\nВвод информации об объекте класса #" << i + 1;
+		cout << "\nГ‚ГўГ®Г¤ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г®ГЎ Г®ГЎГєГҐГЄГІГҐ ГЄГ«Г Г±Г±Г  #" << i + 1;
 		Worker worker;
 		cin >> worker;
 		vector.PushBack(worker);
@@ -113,10 +129,10 @@ int AddParcel(Parcel* parcels) {
 	system("cls");
 	using namespace ZDV;
 	int count{};
-	cout << "\nВведите кол-во объектов класса Посылка: ";
+	cout << "\nГ‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г«-ГўГ® Г®ГЎГєГҐГЄГІГ®Гў ГЄГ«Г Г±Г±Г  ГЏГ®Г±Г»Г«ГЄГ : ";
 	cin >> count;
 	for (int i = c2; i < (c2 + count); i++) {
-		cout << "\nВвод информации об объекте класса #" << i + 1;
+		cout << "\nГ‚ГўГ®Г¤ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г®ГЎ Г®ГЎГєГҐГЄГІГҐ ГЄГ«Г Г±Г±Г  #" << i + 1;
 		cin >> parcels[i];
 	}
 	c2 += count;
@@ -129,10 +145,10 @@ int AddClient(Client* clients, Parcel* parcels) {
 	system("cls");
 	using namespace ZDV;
 	int count{};
-	cout << "\nВведите кол-во объектов класса Клиент: ";
+	cout << "\nГ‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г«-ГўГ® Г®ГЎГєГҐГЄГІГ®Гў ГЄГ«Г Г±Г±Г  ГЉГ«ГЁГҐГ­ГІ: ";
 	cin >> count;
 	for (int i = c3; i < (c3 + count); i++) {
-		cout << "\nВвод информации об объекте класса #" << i + 1;
+		cout << "\nГ‚ГўГ®Г¤ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г®ГЎ Г®ГЎГєГҐГЄГІГҐ ГЄГ«Г Г±Г±Г  #" << i + 1;
 		cin >> clients[i];
 		clients[i].setNumber(parcels[i].getCodeNumber());
 	}
@@ -144,7 +160,7 @@ int AddClient(Client* clients, Parcel* parcels) {
 
 void AddUser(MyVector& vector, Parcel* parcels, Client* clients) {
 	using namespace ZDV;
-	cout << "Выберите класс для добавления:\n1. Worker\n2. Parcel\n3. Client\nSelect >> ";
+	cout << "Г‚Г»ГЎГҐГ°ГЁГІГҐ ГЄГ«Г Г±Г± Г¤Г«Гї Г¤Г®ГЎГ ГўГ«ГҐГ­ГЁГї:\n1. Worker\n2. Parcel\n3. Client\nSelect >> ";
 	int switcher{};
 	cin >> switcher;
 	switch (switcher) {
@@ -165,7 +181,7 @@ int PrintWorker(MyVector vector) {
 	using namespace ZDV;
 	int j = 1;
 	for (Worker w : vector) {
-		cout << "\n\nВывод информации об объектах класса Рабочий #" << j << "\n";
+		cout << "\n\nГ‚Г»ГўГ®Г¤ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г®ГЎ Г®ГЎГєГҐГЄГІГ Гµ ГЄГ«Г Г±Г±Г  ГђГ ГЎГ®Г·ГЁГ© #" << j << "\n";
 		cout << w;
 		j++;
 	}
@@ -177,7 +193,7 @@ int PrintParcel(Parcel* parcels) {
 	system("cls");
 	using namespace ZDV;
 	for (int i = 0; i < c2; i++) {
-		cout << "\n\nВывод информации об объектах класса Посылка #" << i + 1 << "\n";
+		cout << "\n\nГ‚Г»ГўГ®Г¤ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г®ГЎ Г®ГЎГєГҐГЄГІГ Гµ ГЄГ«Г Г±Г±Г  ГЏГ®Г±Г»Г«ГЄГ  #" << i + 1 << "\n";
 		cout << parcels[i] << endl;
 	}
 	system("pause");
@@ -188,7 +204,7 @@ int PrintClient(Client* clients) {
 	system("cls");
 	using namespace ZDV;
 	for (int i = 0; i < c3; i++) {
-		cout << "\n\nВывод информации об объектах класса Клиент #" << i + 1 << "\n";
+		cout << "\n\nГ‚Г»ГўГ®Г¤ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г®ГЎ Г®ГЎГєГҐГЄГІГ Гµ ГЄГ«Г Г±Г±Г  ГЉГ«ГЁГҐГ­ГІ #" << i + 1 << "\n";
 		cout << clients[i] << endl;
 	}
 	system("pause");
@@ -197,7 +213,7 @@ int PrintClient(Client* clients) {
 
 void PrintUser(MyVector vector, Parcel* parcels, Client* clients) {
     using namespace ZDV;
-	cout << "Выберите класс для вывода информации:\n1. Worker\n2. Parcel\n3. Client\nSelect >> ";
+	cout << "Г‚Г»ГЎГҐГ°ГЁГІГҐ ГЄГ«Г Г±Г± Г¤Г«Гї ГўГ»ГўГ®Г¤Г  ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ:\n1. Worker\n2. Parcel\n3. Client\nSelect >> ";
 	int switcher{};
 	cin >> switcher;
 	switch (switcher) {
@@ -216,7 +232,7 @@ void PrintUser(MyVector vector, Parcel* parcels, Client* clients) {
 int DeleteWorker(MyVector& vector) {
 	using namespace ZDV;
 	int tempResult = PrintWorker(vector);
-	cout << "\nВыберите номер объекта для удаления: ";
+	cout << "\nГ‚Г»ГЎГҐГ°ГЁГІГҐ Г­Г®Г¬ГҐГ° Г®ГЎГєГҐГЄГІГ  Г¤Г«Гї ГіГ¤Г Г«ГҐГ­ГЁГї: ";
 	int deleteNum{};
 	cin >> deleteNum;
 	vector.Remove(deleteNum - 1);
@@ -226,7 +242,7 @@ int DeleteWorker(MyVector& vector) {
 int DeleteParcel(Parcel* parcels) {
 	using namespace ZDV;
 	int tempResult = PrintParcel(parcels);
-	cout << "\nВыберите номер объекта для удаления: ";
+	cout << "\nГ‚Г»ГЎГҐГ°ГЁГІГҐ Г­Г®Г¬ГҐГ° Г®ГЎГєГҐГЄГІГ  Г¤Г«Гї ГіГ¤Г Г«ГҐГ­ГЁГї: ";
 	int deleteNum{};
 	cin >> deleteNum;
 	for (int i = (deleteNum - 1); i < (maxCount - 1); i++) {
@@ -239,7 +255,7 @@ int DeleteParcel(Parcel* parcels) {
 int DeleteClient (Client* clients) {
 	using namespace ZDV;
 	int tempResult = PrintClient(clients);
-	cout << "\nВыберите номер объекта для удаления: ";
+	cout << "\nГ‚Г»ГЎГҐГ°ГЁГІГҐ Г­Г®Г¬ГҐГ° Г®ГЎГєГҐГЄГІГ  Г¤Г«Гї ГіГ¤Г Г«ГҐГ­ГЁГї: ";
 	int deleteNum{};
 	cin >> deleteNum;
 	for (int i = (deleteNum - 1); i < (maxCount - 1); i++) {
@@ -252,7 +268,7 @@ int DeleteClient (Client* clients) {
 void DeleteUser(MyVector& vector, Parcel* parcels, Client* clients) {
 	using namespace ZDV;
 	system("cls");
-	cout << "Выберите класс для удаления информации:\n1. Worker\n2. Parcel\n3. Client\nSelect >> ";
+	cout << "Г‚Г»ГЎГҐГ°ГЁГІГҐ ГЄГ«Г Г±Г± Г¤Г«Гї ГіГ¤Г Г«ГҐГ­ГЁГї ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ:\n1. Worker\n2. Parcel\n3. Client\nSelect >> ";
 	int switcher{};
 	cin >> switcher;
 	switch (switcher) {
@@ -315,7 +331,7 @@ int SortClient(Client* clients) {
 void SortUser(MyVector& vector, Parcel* parcels, Client* clients) {
 	using namespace ZDV;
 	system("cls");
-	cout << "Выберите класс для соритровки информации:\n1. Worker\n2. Parcel\n3. Client\nSelect >> ";
+	cout << "Г‚Г»ГЎГҐГ°ГЁГІГҐ ГЄГ«Г Г±Г± Г¤Г«Гї Г±Г®Г°ГЁГІГ°Г®ГўГЄГЁ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ:\n1. Worker\n2. Parcel\n3. Client\nSelect >> ";
 	int switcher{};
 	cin >> switcher;
 	switch (switcher) {
@@ -334,12 +350,12 @@ void SortUser(MyVector& vector, Parcel* parcels, Client* clients) {
 void FilterWorker(MyVector vector) {
 	system("cls");
 	string name;
-	cout << "Введите имя пользователя для фильтрации: ";
+	cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГЁГ¬Гї ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї Г¤Г«Гї ГґГЁГ«ГјГІГ°Г Г¶ГЁГЁ: ";
 	cin >> name;
 	int j = 1;
 	for (Worker w : vector) {
 		if (w.getName() == name) {
-			cout << "\n\nВывод информации об объектах класса Рабочий #" << j << "\n";
+			cout << "\n\nГ‚Г»ГўГ®Г¤ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г®ГЎ Г®ГЎГєГҐГЄГІГ Гµ ГЄГ«Г Г±Г±Г  ГђГ ГЎГ®Г·ГЁГ© #" << j << "\n";
 			cout << w;
 			j++;
 		}
@@ -358,7 +374,7 @@ void FilterClient(Client* clients) {
 void FilterUser(MyVector& vector, Parcel* parcels, Client* clients) {
 	using namespace ZDV;
 	system("cls");
-	cout << "Выберите класс для фильтрации информации:\n1. Worker\n2. Parcel\n3. Client\nSelect >> ";
+	cout << "Г‚Г»ГЎГҐГ°ГЁГІГҐ ГЄГ«Г Г±Г± Г¤Г«Гї ГґГЁГ«ГјГІГ°Г Г¶ГЁГЁ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ:\n1. Worker\n2. Parcel\n3. Client\nSelect >> ";
 	int switcher{};
 	cin >> switcher;
 	switch (switcher) {
@@ -408,13 +424,13 @@ int main() {
 	Client* clients = new Client[maxCount];
 
 	const int itemsCount = 6;
-	char squareRootOf25Name[]{ "Вычислить корень из 25" };
-	char helloName[]{ "Поздороваться с пользователем" };
-	char printHelloName[]{ "Изобразить картинку псевдографикой" };
-	char menuTitle[]{ "Главное меню" };
-	char incheritance[]{ "Наследование" };
-	char operatorOverloading[]{ "Перегрузка операторов" };
-	char ex[]{ "Выход" };
+	char squareRootOf25Name[]{ "Г‚Г»Г·ГЁГ±Г«ГЁГІГј ГЄГ®Г°ГҐГ­Гј ГЁГ§ 25" };
+	char helloName[]{ "ГЏГ®Г§Г¤Г®Г°Г®ГўГ ГІГјГ±Гї Г± ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГҐГ¬" };
+	char printHelloName[]{ "Г€Г§Г®ГЎГ°Г Г§ГЁГІГј ГЄГ Г°ГІГЁГ­ГЄГі ГЇГ±ГҐГўГ¤Г®ГЈГ°Г ГґГЁГЄГ®Г©" };
+	char menuTitle[]{ "ГѓГ«Г ГўГ­Г®ГҐ Г¬ГҐГ­Гѕ" };
+	char incheritance[]{ "ГЌГ Г±Г«ГҐГ¤Г®ГўГ Г­ГЁГҐ" };
+	char operatorOverloading[]{ "ГЏГҐГ°ГҐГЈГ°ГіГ§ГЄГ  Г®ГЇГҐГ°Г ГІГ®Г°Г®Гў" };
+	char ex[]{ "Г‚Г»ГµГ®Г¤" };
 	Item items[itemsCount]{
 		Item {squareRootOf25Name, sqrt25},
 		Item {helloName, hello},
@@ -425,13 +441,13 @@ int main() {
 	Menu menu{ menuTitle, items, itemsCount };
 
 	const int runMenuUsers = 6;
-	char usersMenu[] = "Пользовательское меню";
-	char addUsers[] = "Добавить пользователя";
-	char deleteUsers[] = "Удалить пользователя";
-	char sortUsers[] = "Сортировать массив пользователей";
-	char filterUsers[] = "Фильтровать массив пользователей";
-	char printUsers[] = "Вывести информацию о пользователе";
-	char backToMainMenu[] = "Назад в главное меню";
+	char usersMenu[] = "ГЏГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГјГ±ГЄГ®ГҐ Г¬ГҐГ­Гѕ";
+	char addUsers[] = "Г„Г®ГЎГ ГўГЁГІГј ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї";
+	char deleteUsers[] = "Г“Г¤Г Г«ГЁГІГј ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї";
+	char sortUsers[] = "Г‘Г®Г°ГІГЁГ°Г®ГўГ ГІГј Г¬Г Г±Г±ГЁГў ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГҐГ©";
+	char filterUsers[] = "Г”ГЁГ«ГјГІГ°Г®ГўГ ГІГј Г¬Г Г±Г±ГЁГў ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГҐГ©";
+	char printUsers[] = "Г‚Г»ГўГҐГ±ГІГЁ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ Г® ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГҐ";
+	char backToMainMenu[] = "ГЌГ Г§Г Г¤ Гў ГЈГ«Г ГўГ­Г®ГҐ Г¬ГҐГ­Гѕ";
 	Item items_user[runMenuUsers]{
 		Item {addUsers, AddUser},
 		Item {deleteUsers, DeleteUser},
